@@ -69,6 +69,7 @@ describe('Booking', () => {
         guestInfo.selectFn('English','Pakistani')
         guestInfo.userDetails('Muhammad','Farqleet','farqleetmuuhammad6@gmail.com','3','1')
         cy.get('button.btn.btn-sm.btn-success.px-3').click()
+        //faffeg
 
 })
 })
