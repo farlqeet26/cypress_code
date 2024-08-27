@@ -58,8 +58,6 @@ describe('Booking', () => {
         cy.get('#add_booking_button').should('be.visible').and('contain.text', 'Add New Booking').click() //create booking
         cy.get('.modal-content .modal-title').should('be.visible').and('contain.text', 'Booking Details') //heading on modal
         cy.get('#assigned_property').should('be.visible').select('Waqas Property')
-        //cy.get('.form-group label[for="assigned_rental"]').should('contain.text','Rental')
-       // cy.get('select#assigned_rental.custom-select-arrow.form-control').should('be.disabled').and('contain.text','Select Rental')
         sourceObj.selectOpt('Direct')
         sourceObj.reservationStatus('Confirmed')
         sourceObj.bookingAmount('40,000')
@@ -69,8 +67,7 @@ describe('Booking', () => {
         guestInfo.selectFn('English','Pakistani')
         guestInfo.userDetails('Muhammad','Farqleet','farqleetmuuhammad6@gmail.com','3','1')
         cy.get('button.btn.btn-sm.btn-success.px-3').click()
-        //faffegg
-        //12345
+        cy.get('123')
 
 })
 })
